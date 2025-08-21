@@ -17,56 +17,72 @@ function App() {
       </header>
 
       {/* About Section */}
-      <section id="about" className="container mx-auto px-6 py-12">
-        <motion.h2 
-          className="text-3xl font-bold mb-4"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-        >
-          About Me
-        </motion.h2>
-        <motion.p
-          className="text-gray-700 max-w-2xl"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1, transition: { delay: 0.2 } }}
-        >
+      <motion.section 
+        id="about" 
+        className="container mx-auto px-6 py-12 bg-gradient-to-r from-gray-100 to-gray-200"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+      >
+        <h2 className="text-3xl font-bold mb-4">About Me</h2>
+        <p className="text-gray-700 max-w-2xl">
           Hi, I'm Anfal Eltahir – Web Developer & Full Stack Engineer with 5+ years of experience building responsive websites using React, TailwindCSS, PHP, and Laravel.
-        </motion.p>
-      </section>
+        </p>
+      </motion.section>
 
       {/* Projects Section */}
-      <section id="projects" className="container mx-auto px-6 py-12">
+      <motion.section 
+        id="projects" 
+        className="container mx-auto px-6 py-12"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+      >
         <h2 className="text-3xl font-bold mb-6">Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {/* Project Card */}
+          {/* Project Card 1 */}
           <motion.div 
             className="bg-white shadow-lg rounded-lg p-4"
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.05, y: -5 }}
+            transition={{ type: "spring", stiffness: 300 }}
           >
             <img src="/src/assets/project1.png" alt="Project 1" className="rounded mb-4" />
             <h3 className="text-xl font-bold mb-2">Shopify Task</h3>
             <p className="text-gray-600">Custom Shopify product and cart templates development task.</p>
-            <a href="https://github.com/Anfal-93/Shopify-Task" target="_blank" className="inline-block mt-2 text-blue-500 hover:underline">View on GitHub</a>
+            <a href="https://github.com/Anfal-93/Shopify-Task" target="_blank" className="inline-block mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition">View on GitHub</a>
           </motion.div>
 
-          {/* Add more project cards here */}
-          <motion.div className="bg-white shadow-lg rounded-lg p-4" whileHover={{ scale: 1.05 }}>
+          {/* Project Card 2 */}
+          <motion.div 
+            className="bg-white shadow-lg rounded-lg p-4"
+            whileHover={{ scale: 1.05, y: -5 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          >
             <img src="/src/assets/project2.png" alt="Project 2" className="rounded mb-4" />
             <h3 className="text-xl font-bold mb-2">Portfolio Website</h3>
             <p className="text-gray-600">This portfolio built with React, Vite, TailwindCSS, and Framer Motion.</p>
-            <a href="https://github.com/Anfal-93/my-portfolio" target="_blank" className="inline-block mt-2 text-blue-500 hover:underline">View on GitHub</a>
+            <a href="https://github.com/Anfal-93/my-portfolio" target="_blank" className="inline-block mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition">View on GitHub</a>
           </motion.div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Contact Section */}
-      <section id="contact" className="container mx-auto px-6 py-12">
+      <motion.section 
+        id="contact" 
+        className="container mx-auto px-6 py-12 bg-gradient-to-r from-gray-200 to-gray-100"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+      >
         <h2 className="text-3xl font-bold mb-4">Contact</h2>
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">
           <a href="https://linkedin.com/in/Anfal-93" target="_blank" className="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition text-center">LinkedIn</a>
           <a href="mailto:your-email@example.com" className="bg-green-500 text-white px-6 py-3 rounded hover:bg-green-600 transition text-center">Email</a>
         </div>
-      </section>
+      </motion.section>
 
       {/* Footer */}
       <footer className="bg-white shadow-md py-6 mt-12">
