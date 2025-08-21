@@ -1,25 +1,26 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+// استيراد الصور بشكل نسبي من مجلد assets
 import project1 from "./assets/project1.png";
 import project2 from "./assets/project2.png";
 import project3 from "./assets/project3.png";
 
 const projects = [
   {
-    img: "project1.png",
+    img: project1,
     title: "Shopify Task",
     description: "Custom Shopify product and cart templates development task.",
     link: "https://github.com/Anfal-93/Shopify-Task"
   },
   {
-    img: "project2.png",
+    img: project2,
     title: "Portfolio Website",
     description: "Portfolio built with React, Vite, TailwindCSS, and Framer Motion.",
     link: "https://github.com/Anfal-93/my-portfolio"
   },
   {
-    img: "project3.png",
+    img: project3,
     title: "Sample Project",
     description: "A placeholder project to showcase design and coding skills.",
     link: "https://github.com/Anfal-93/my-portfolio"
@@ -82,7 +83,7 @@ function App() {
               transition={{ delay: index * 0.2, duration: 0.5 }}
             >
               <img
-                src={`/src/assets/${project.img}`}
+                src={project.img}
                 alt={project.title}
                 className="rounded mb-4 shadow-sm hover:scale-105 transition-transform duration-300"
               />
