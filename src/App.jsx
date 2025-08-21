@@ -42,7 +42,7 @@ function App() {
       >
         <h2 className="text-3xl font-bold mb-6">Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {["project1.jpg","project2.jpg","project3.jpg"].map((img, index) => (
+          {["project1.png","project2.png","project3.png"].map((img, index) => (
             <motion.div 
               key={index}
               className="bg-white shadow-lg rounded-lg p-4"
