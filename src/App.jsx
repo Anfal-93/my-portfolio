@@ -1,76 +1,147 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+const projects = [
+  {
+    img: "project1.png",
+    title: "Shopify Task",
+    description: "Custom Shopify product and cart templates development task.",
+    link: "https://github.com/Anfal-93/Shopify-Task"
+  },
+  {
+    img: "project2.png",
+    title: "Portfolio Website",
+    description: "Portfolio built with React, Vite, TailwindCSS, and Framer Motion.",
+    link: "https://github.com/Anfal-93/my-portfolio"
+  },
+  {
+    img: "project3.png",
+    title: "Sample Project",
+    description: "A placeholder project to showcase design and coding skills.",
+    link: "https://github.com/Anfal-93/my-portfolio"
+  }
+];
+
+const skills = ["React", "TailwindCSS", "Shopify", "PHP", "Laravel", "JavaScript"];
+
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100 text-gray-800 font-sans">
+    <div className="min-h-screen bg-gray-50 text-gray-800 font-sans">
       {/* Header */}
       <header className="bg-white shadow-md py-6">
         <div className="container mx-auto px-6 flex justify-between items-center">
-          <h1 className="text-3xl font-bold">Anfal Eltahir</h1>
-          <nav className="space-x-6">
-            <a href="#about" className="hover:text-blue-500">About</a>
-            <a href="#projects" className="hover:text-blue-500">Projects</a>
-            <a href="#contact" className="hover:text-blue-500">Contact</a>
+          <h1 className="text-3xl font-bold text-blue-600">Anfal Eltahir</h1>
+          <nav className="space-x-6 text-gray-700">
+            <a href="#about" className="hover:text-blue-500 transition">About</a>
+            <a href="#projects" className="hover:text-blue-500 transition">Projects</a>
+            <a href="#skills" className="hover:text-blue-500 transition">Skills</a>
+            <a href="#contact" className="hover:text-blue-500 transition">Contact</a>
           </nav>
         </div>
       </header>
 
       {/* About Section */}
-      <motion.section 
-        id="about" 
-        className="container mx-auto px-6 py-12 bg-gradient-to-r from-gray-100 to-gray-200"
+      <motion.section
+        id="about"
+        className="container mx-auto px-6 py-16 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg my-8"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.5 }}
       >
-        <h2 className="text-3xl font-bold mb-4">About Me</h2>
+        <h2 className="text-3xl font-bold mb-4 text-gray-800">About Me</h2>
         <p className="text-gray-700 max-w-2xl">
-          Hi, I'm Anfal Eltahir – Web Developer & Full Stack Engineer with 5+ years of experience building responsive websites using React, TailwindCSS, PHP, and Laravel.
+          Hi, I'm Anfal Eltahir – Web Developer & Full Stack Engineer with 5+ years of experience building responsive websites using React, TailwindCSS, PHP, and Laravel. Passionate about creating interactive and modern web experiences.
         </p>
       </motion.section>
 
       {/* Projects Section */}
-      <motion.section 
-        id="projects" 
-        className="container mx-auto px-6 py-12"
+      <motion.section
+        id="projects"
+        className="container mx-auto px-6 py-16"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.5 }}
       >
-        <h2 className="text-3xl font-bold mb-6">Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {["project1.png","project2.png","project3.png"].map((img, index) => (
-            <motion.div 
+        <h2 className="text-3xl font-bold mb-8 text-gray-800">Projects</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <motion.div
               key={index}
-              className="bg-white shadow-lg rounded-lg p-4"
+              className="bg-white shadow-lg rounded-lg p-4 hover:shadow-xl transition-shadow"
               whileHover={{ scale: 1.05, y: -5 }}
               transition={{ type: "spring", stiffness: 300 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.2, duration: 0.5 }}
             >
-              <img src={`/src/assets/${img}`} alt={`Project ${index+1}`} className="rounded mb-4" />
-              <h3 className="text-xl font-bold mb-2">Project {index+1}</h3>
-              <p className="text-gray-600">This is a placeholder description for Project {index+1}.</p>
-              <a href="https://github.com/Anfal-93/my-portfolio" target="_blank" className="inline-block mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition">View on GitHub</a>
+              <img
+                src={`/src/assets/${project.img}`}
+                alt={project.title}
+                className="rounded mb-4 shadow-sm hover:scale-105 transition-transform duration-300"
+              />
+              <h3 className="text-xl font-bold mb-2 text-gray-800">{project.title}</h3>
+              <p className="text-gray-600">{project.description}</p>
+              <a
+                href={project.link}
+                target="_blank"
+                className="inline-block mt-3 px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded hover:scale-105 transition-transform"
+              >
+                View on GitHub
+              </a>
             </motion.div>
           ))}
         </div>
       </motion.section>
 
-      {/* Contact Section */}
-      <motion.section 
-        id="contact" 
-        className="container mx-auto px-6 py-12 bg-gradient-to-r from-gray-200 to-gray-100"
+      {/* Skills Section */}
+      <motion.section
+        id="skills"
+        className="container mx-auto px-6 py-16 bg-gray-100 rounded-lg my-8"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.5 }}
       >
-        <h2 className="text-3xl font-bold mb-4">Contact</h2>
-        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">
-          <a href="https://linkedin.com/in/Anfal-93" target="_blank" className="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition text-center">LinkedIn</a>
-          <a href="mailto:your-email@example.com" className="bg-green-500 text-white px-6 py-3 rounded hover:bg-green-600 transition text-center">Email</a>
+        <h2 className="text-3xl font-bold mb-6 text-gray-800">Skills</h2>
+        <div className="flex flex-wrap gap-4">
+          {skills.map((skill, index) => (
+            <span
+              key={index}
+              className="px-4 py-2 bg-blue-100 text-blue-800 rounded-full font-medium"
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
+      </motion.section>
+
+      {/* Contact Section */}
+      <motion.section
+        id="contact"
+        className="container mx-auto px-6 py-16 bg-gradient-to-r from-gray-200 to-gray-100 rounded-lg my-8"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+      >
+        <h2 className="text-3xl font-bold mb-6 text-gray-800">Contact</h2>
+        <div className="flex flex-col md:flex-row gap-6">
+          <a
+            href="https://linkedin.com/in/Anfal-93"
+            target="_blank"
+            className="flex-1 text-center px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="mailto:your-email@example.com"
+            className="flex-1 text-center px-6 py-3 bg-green-500 text-white rounded hover:bg-green-600 transition"
+          >
+            Email
+          </a>
         </div>
       </motion.section>
 
