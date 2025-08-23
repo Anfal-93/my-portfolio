@@ -1,30 +1,33 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
-// استيراد الصور بشكل نسبي من مجلد assets
+// استيراد الصور
 import project1 from "./assets/project1.png";
 import project2 from "./assets/project2.png";
 import project3 from "./assets/project3.png";
 
 const projects = [
   {
+    id: 1,
     img: project1,
     title: "My Shopify Store",
-    description: "Enter this password anfal123 to view my Shopify store for hair care products",
-    //link: "https://github.com/Anfal-93/Shopify-Task"
-	link: "https://anfal123.myshopify.com"
+    description: "Password: anfal123",
+    link: "/projects/1"
   },
   {
+    id: 2,
     img: project2,
     title: "Portfolio Website",
-    description: "My Portfolio built with React, Vite, TailwindCSS, and Framer Motion.",
-    link: "https://github.com/Anfal-93/my-portfolio"
+    description: "Built with React, TailwindCSS, Framer Motion",
+    link: "/projects/2"
   },
   {
+    id: 3,
     img: project3,
     title: "Sample Project",
-    description: "A placeholder project to showcase design and coding skills.",
-    link: "https://github.com/Anfal-93/my-portfolio"
+    description: "Placeholder project",
+    link: "/projects/3"
   }
 ];
 
@@ -57,20 +60,8 @@ function App() {
         transition={{ duration: 0.5 }}
       >
         <h2 className="text-3xl font-bold mb-4 text-gray-800">About Me</h2>
-        <p className="text-gray-4000 max-w-20xl">
-        Hi, I'm Anfal Eltahir – Experienced Web Developer with over 5 years of experience in developing, scalable web applications. 
-		Expertise In both front-end and back-end technologies. Proficient in JavaScript, HTML, CSS, jQuery, Ajax, PHP, Java, 
-		MYSQL databases, CURD database queries and modern Frontend and Backend Frameworks like AngularJS, 
-		React.JS and Node.JS. Using version control systems such as Git and familiar with Agile development processes 
-		with holding Certified Agile Scrum Master (CASM) Certification. I worked as a TA for many subjects such as 
-		Internet Technology and Web Design, Web Development, System Analysis and Design, Programming Languages 
-		and others. Great knowledge in CI/CD pipelines ensuring rapid and reliable deployment cycles, systems analytical, 
-		technical design, software development, implementation and maintenance software solutions. Skilled in design and 
-		develop software in an enterprise environment , develop responsive design, user-friendly websites for platforms, 
-		resulting in a 40% increase in user engagement, building strong client relationships, communicating with clients 
-		to determine website specifications, writing codes, working with a team of designers, with a focus on optimizing 
-		performance, delivering seamless user experiences, learning new technologies and keeping up with industry trends 
-		to deliver innovative solutions.
+        <p className="text-gray-700 max-w-3xl">
+          Hi, I'm Anfal Eltahir – Experienced Web Developer with over 5 years of experience in scalable web applications. Expertise in front-end and back-end technologies including React, Node.js, PHP, Shopify, WooCommerce, and more. I have strong skills in responsive design, performance optimization, and delivering seamless user experiences.
         </p>
       </motion.section>
 
@@ -85,16 +76,12 @@ function App() {
       >
         <h2 className="text-3xl font-bold mb-8 text-gray-800">Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <motion.div
-              key={index}
+              key={project.id}
               className="bg-white shadow-lg rounded-lg p-4 hover:shadow-xl transition-shadow"
               whileHover={{ scale: 1.05, y: -5 }}
               transition={{ type: "spring", stiffness: 300 }}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.2, duration: 0.5 }}
             >
               <img
                 src={project.img}
@@ -103,13 +90,12 @@ function App() {
               />
               <h3 className="text-xl font-bold mb-2 text-gray-800">{project.title}</h3>
               <p className="text-gray-600">{project.description}</p>
-              <a
-                href={project.link}
-                target="_blank"
+              <Link
+                to={project.link}
                 className="inline-block mt-3 px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded hover:scale-105 transition-transform"
               >
-                View on GitHub
-              </a>
+                View Details
+              </Link>
             </motion.div>
           ))}
         </div>
