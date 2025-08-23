@@ -9,14 +9,15 @@ import project3 from "./assets/project3.png";
 const projects = [
   {
     img: project1,
-    title: "Shopify Task",
-    description: "Custom Shopify product and cart templates development task.",
-    link: "https://github.com/Anfal-93/Shopify-Task"
+    title: "My Shopify Store",
+    description: "Enter this password anfal123 to view my Shopify store for hair care products",
+    //link: "https://github.com/Anfal-93/Shopify-Task"
+	link: "https://anfal123.myshopify.com"
   },
   {
     img: project2,
     title: "Portfolio Website",
-    description: "Portfolio built with React, Vite, TailwindCSS, and Framer Motion.",
+    description: "My Portfolio built with React, Vite, TailwindCSS, and Framer Motion.",
     link: "https://github.com/Anfal-93/my-portfolio"
   },
   {
@@ -27,7 +28,8 @@ const projects = [
   }
 ];
 
-const skills = ["React", "TailwindCSS", "Shopify", "PHP", "Laravel", "JavaScript"];
+const skills = ["HTML","CSS","PHP","JavaScript","Java","Liquid","jQuery","Ajax","React.JS",
+                "Node.JS","TailwindCSS","Shopify","WordPress","WooCommerce"];
 
 function App() {
   return (
@@ -56,7 +58,19 @@ function App() {
       >
         <h2 className="text-3xl font-bold mb-4 text-gray-800">About Me</h2>
         <p className="text-gray-700 max-w-2xl">
-          Hi, I'm Anfal Eltahir – Web Developer & Full Stack Engineer with 5+ years of experience building responsive websites using React, TailwindCSS, PHP, and Laravel. Passionate about creating interactive and modern web experiences.
+        Hi, I'm Anfal Eltahir – Experienced Web Developer with over 5 years of experience in developing, scalable web applications. 
+		Expertise In both front-end and back-end technologies. Proficient in JavaScript, HTML, CSS, jQuery, Ajax, PHP, Java, 
+		MYSQL databases, CURD database queries and modern Frontend and Backend Frameworks like AngularJS, 
+		React.JS and Node.JS. Using version control systems such as Git and familiar with Agile development processes 
+		with holding Certified Agile Scrum Master (CASM) Certification. I worked as a TA for many subjects such as 
+		Internet Technology and Web Design, Web Development, System Analysis and Design, Programming Languages 
+		and others. Great knowledge in CI/CD pipelines ensuring rapid and reliable deployment cycles, systems analytical, 
+		technical design, software development, implementation and maintenance software solutions. Skilled in design and 
+		develop software in an enterprise environment , develop responsive design, user-friendly websites for platforms, 
+		resulting in a 40% increase in user engagement, building strong client relationships, communicating with clients 
+		to determine website specifications, writing codes, working with a team of designers, with a focus on optimizing 
+		performance, delivering seamless user experiences, learning new technologies and keeping up with industry trends 
+		to deliver innovative solutions.
         </p>
       </motion.section>
 
