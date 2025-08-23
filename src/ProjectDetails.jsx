@@ -12,7 +12,7 @@ const projects = [
     title: "My Shopify Store",
     description: "Shopify store for hair care products. Password: anfal123",
     link: "https://anfal123.myshopify.com",
-    images: [project1, project2, project3],
+    images: [project1, project2, project3]
    // video: "/videos/project1.mp4" // موجود في public/videos
   },
   {
@@ -20,14 +20,14 @@ const projects = [
     title: "Portfolio Website",
     description: "Portfolio built with React, TailwindCSS, Framer Motion",
     link: "https://github.com/Anfal-93/my-portfolio",
-    images: [project2],
+    images: [project2]
    // video: "/videos/project2.mp4"
   },
   {
     id: 3,
     title: "Sample Project",
     description: "Placeholder project",
-    images: [project3],
+    images: [project3]
    // video: "/videos/project3.mp4"
   },
 ];
