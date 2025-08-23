@@ -67,15 +67,6 @@ function ProjectDetails() {
           />
         ))}
       </div>
-      <br /><br />
-
-    // {/* الفيديو */}
-    //  {project.video && (
-    //    <video controls className="w-full h-96 rounded-lg shadow-lg mb-4">
-    //      <source src={project.video} type="video/mp4" />
-     //     Your browser does not support the video tag.
-     //   </video>
-     // )}
     </div>
   );
 }
