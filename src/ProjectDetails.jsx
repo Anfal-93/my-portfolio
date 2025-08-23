@@ -12,7 +12,7 @@ const projects = [
     title: "My Shopify Store",
     description: "Shopify store for hair care products. Password: anfal123",
     link: "https://anfal123.myshopify.com",
-    images: [project1, project2, project3]
+    images: [project1, project2]
    // video: "/videos/project1.mp4" // موجود في public/videos
   },
   {
