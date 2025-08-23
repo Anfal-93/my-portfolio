@@ -13,7 +13,7 @@ const projects = [
     description: "Shopify store for hair care products. Password: anfal123",
     link: "https://anfal123.myshopify.com",
     images: [project1, project2, project3],
-    video: "/videos/project1.mp4" // موجود في public/videos
+   // video: "/videos/project1.mp4" // موجود في public/videos
   },
   {
     id: 2,
@@ -21,14 +21,14 @@ const projects = [
     description: "Portfolio built with React, TailwindCSS, Framer Motion",
     link: "https://github.com/Anfal-93/my-portfolio",
     images: [project2],
-    video: "/videos/project2.mp4"
+   // video: "/videos/project2.mp4"
   },
   {
     id: 3,
     title: "Sample Project",
     description: "Placeholder project",
     images: [project3],
-    video: "/videos/project3.mp4"
+   // video: "/videos/project3.mp4"
   },
 ];
 
@@ -69,13 +69,13 @@ function ProjectDetails() {
       </div>
       <br /><br />
 
-      {/* الفيديو */}
-      {project.video && (
-        <video controls className="w-full h-96 rounded-lg shadow-lg mb-4">
-          <source src={project.video} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      )}
+    // {/* الفيديو */}
+    //  {project.video && (
+    //    <video controls className="w-full h-96 rounded-lg shadow-lg mb-4">
+    //      <source src={project.video} type="video/mp4" />
+     //     Your browser does not support the video tag.
+     //   </video>
+     // )}
     </div>
   );
 }
