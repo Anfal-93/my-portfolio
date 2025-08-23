@@ -57,7 +57,7 @@ function App() {
         transition={{ duration: 0.5 }}
       >
         <h2 className="text-3xl font-bold mb-4 text-gray-800">About Me</h2>
-        <p className="text-gray-2000 max-w-8xl">
+        <p className="text-gray-4000 max-w-10xl">
         Hi, I'm Anfal Eltahir – Experienced Web Developer with over 5 years of experience in developing, scalable web applications. 
 		Expertise In both front-end and back-end technologies. Proficient in JavaScript, HTML, CSS, jQuery, Ajax, PHP, Java, 
 		MYSQL databases, CURD database queries and modern Frontend and Backend Frameworks like AngularJS, 
