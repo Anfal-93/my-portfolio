@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 // استيراد الصور
 import project1 from "./assets/project1.png";
 import project2 from "./assets/project2.png";
-import Modernuae1 from "./assets/modernuae1.png";
-import Modernuae2 from "./assets/modernuae2.png";
-import Modernuae3 from "./assets/modernuae3.png";
-import Modernuae4 from "./assets/modernuae4.png";
-import Modernuae5 from "./assets/modernuae5.png";
+import modernuae1 from "./assets/modernuae1.png";
+import modernuae2 from "./assets/modernuae2.png";
+import modernuae3 from "./assets/modernuae3.png";
+import modernuae4 from "./assets/modernuae4.png";
+import modernuae5 from "./assets/modernuae5.png";
 import Auto1 from "./assets/Auto1.png";
 import Auto2 from "./assets/Auto2.png";
 import Auto3 from "./assets/Auto3.png";
@@ -161,7 +161,7 @@ function App() {
         <h2 className="text-3xl font-bold mb-6 text-gray-800">Contact</h2>
         <div className="flex flex-col md:flex-row gap-6">
           <a
-            href="linkedin.com/in/anfal-eltahir-0b3b21162"
+            href="https://www.linkedin.com/in/anfal-eltahir-0b3b21162"
             target="_blank"
             className="flex-1 text-center px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
           >

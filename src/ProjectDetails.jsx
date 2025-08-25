@@ -4,11 +4,11 @@ import { useParams } from "react-router-dom";
 // استيراد الصور من src/assets
 import project1 from "./assets/project1.png";
 import project2 from "./assets/project2.png";
-import Modernuae1 from "./assets/modernuae1.png";
-import Modernuae2 from "./assets/modernuae2.png";
-import Modernuae3 from "./assets/modernuae3.png";
-import Modernuae4 from "./assets/modernuae4.png";
-import Modernuae5 from "./assets/modernuae5.png";
+import modernuae1 from "./assets/modernuae1.png";
+import modernuae2 from "./assets/modernuae2.png";
+import modernuae3 from "./assets/modernuae3.png";
+import modernuae4 from "./assets/modernuae4.png";
+import modernuae5 from "./assets/modernuae5.png";
 import Auto1 from "./assets/Auto1.png";
 import Auto2 from "./assets/Auto2.png";
 import Auto3 from "./assets/Auto3.png";
@@ -20,8 +20,7 @@ const projects = [
   {
     id: 1,
     title: "My Shopify Store",
-    description: "Shopify store for hair care products.",
-	description: "To Access please Enter this Password: anfal123",
+    description: "Shopify store for hair care products .. To Access please Enter this Password: anfal123",
     link: "https://anfal123.myshopify.com",
     images: [project1, project2]
    // video: "/videos/project1.mp4" // موجود في public/videos
@@ -31,7 +30,7 @@ const projects = [
     title: "Moder Square Website",
     description: "It's a real estate and Properties website, built with WordPress",
     link: "https://www.modernsquare.ae",
-    images: [Modernuae1, Modernuae2, Modernuae3, Modernuae4, Modernuae5]
+    images: [modernuae1, modernuae2, modernuae3, modernuae4, modernuae5]
    // video: "/videos/project2.mp4"
   },
   {
