@@ -4,30 +4,58 @@ import { useParams } from "react-router-dom";
 // استيراد الصور من src/assets
 import project1 from "./assets/project1.png";
 import project2 from "./assets/project2.png";
-import project3 from "./assets/project3.png";
+import Modernuae1 from "./assets/modernuae1.png";
+import Modernuae2 from "./assets/modernuae2.png";
+import Modernuae3 from "./assets/modernuae3.png";
+import Modernuae4 from "./assets/modernuae4.png";
+import Modernuae5 from "./assets/modernuae5.png";
+import Auto1 from "./assets/Auto1.png";
+import Auto2 from "./assets/Auto2.png";
+import Auto3 from "./assets/Auto3.png";
+import Egypt1 from "./assets/Egypt1.png";
+import Egypt2 from "./assets/Egypt2.png";
+import Spain1 from "./assets/Spain1.png";
 
 const projects = [
   {
     id: 1,
     title: "My Shopify Store",
-    description: "Shopify store for hair care products. Password: anfal123",
+    description: "Shopify store for hair care products.",
+	description: "To Access please Enter this Password: anfal123",
     link: "https://anfal123.myshopify.com",
     images: [project1, project2]
    // video: "/videos/project1.mp4" // موجود في public/videos
   },
   {
     id: 2,
-    title: "Portfolio Website",
-    description: "Portfolio built with React, TailwindCSS, Framer Motion",
-    link: "https://github.com/Anfal-93/my-portfolio",
-    images: [project2]
+    title: "Moder Square Website",
+    description: "It's a real estate and Properties website, built with WordPress",
+    link: "https://www.modernsquare.ae",
+    images: [Modernuae1, Modernuae2, Modernuae3, Modernuae4, Modernuae5]
    // video: "/videos/project2.mp4"
   },
   {
     id: 3,
-    title: "Sample Project",
-    description: "Placeholder project",
-    images: [project3]
+    title: "Modern Auto Website",
+    description: "It's a cars rental and sale website",
+	link: "https://www.modernauto.es",
+    images: [Auto1, Auto2, Auto3]
+   // video: "/videos/project3.mp4"
+  },
+  {
+    id: 4,
+    title: "Modern Square Egypt",
+    description: "It's a services website",
+	link: "https://modernsquareegypt.com",
+    images: [Egypt1, Egypt2]
+   // video: "/videos/project3.mp4"
+  },
+  {
+    id: 5,
+    title: "Modern Square Spain",
+    description: "It's a services website",
+	link: "https://modernsquarespain.com",
+    images: [Spain1]
    // video: "/videos/project3.mp4"
   },
 ];

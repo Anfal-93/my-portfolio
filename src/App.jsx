@@ -5,34 +5,58 @@ import { Link } from "react-router-dom";
 // استيراد الصور
 import project1 from "./assets/project1.png";
 import project2 from "./assets/project2.png";
-import project3 from "./assets/project3.png";
+import Modernuae1 from "./assets/modernuae1.png";
+import Modernuae2 from "./assets/modernuae2.png";
+import Modernuae3 from "./assets/modernuae3.png";
+import Modernuae4 from "./assets/modernuae4.png";
+import Modernuae5 from "./assets/modernuae5.png";
+import Auto1 from "./assets/Auto1.png";
+import Auto2 from "./assets/Auto2.png";
+import Auto3 from "./assets/Auto3.png";
+import Egypt1 from "./assets/Egypt1.png";
+import Egypt2 from "./assets/Egypt2.png";
+import Spain1 from "./assets/Spain1.png";
 
 const projects = [
   {
     id: 1,
     img: project1,
     title: "My Shopify Store",
-    description: "Password: anfal123",
+    description: "Shopify store for hair care products",
     link: "/projects/1"
   },
   {
     id: 2,
-    img: project2,
-    title: "Portfolio Website",
-    description: "Built with React, TailwindCSS, Framer Motion",
+    img: modernuae1,
+    title: "Modern Square Website",
+    description: "It's a real estate and Properties website, built with WordPress",
     link: "/projects/2"
   },
   {
     id: 3,
-    img: project3,
-    title: "Sample Project",
-    description: "Placeholder project",
+    img: Auto1,
+    title: "Modern Auto Website",
+    description: "It's a cars rental and sale website",
     link: "/projects/3"
+  },
+  {
+    id: 4,
+    img: Egypt1,
+    title: "Modern Square Egypt",
+    description: "It's a services website",
+    link: "/projects/4"
+  },
+  {
+    id: 5,
+    img: Spain1,
+    title: "Modern Square Spain",
+    description: "It's a services website",
+    link: "/projects/5"
   }
 ];
 
 const skills = ["HTML","CSS","PHP","JavaScript","Java","Liquid","jQuery","Ajax","React.JS",
-                "Node.JS","TailwindCSS","Shopify","WordPress","WooCommerce"];
+                "Node.JS","TailwindCSS","Framer Motion","Shopify","WordPress","WooCommerce"];
 
 function App() {
   return (
@@ -60,8 +84,10 @@ function App() {
         transition={{ duration: 0.5 }}
       >
         <h2 className="text-3xl font-bold mb-4 text-gray-800">About Me</h2>
-        <p className="text-gray-700 max-w-3xl">
-          Hi, I'm Anfal Eltahir – Experienced Web Developer with over 5 years of experience in scalable web applications. Expertise in front-end and back-end technologies including React, Node.js, PHP, Shopify, WooCommerce, and more. I have strong skills in responsive design, performance optimization, and delivering seamless user experiences.
+        <p className="text-gray-1000 max-w-4xl">
+          Hi, I'm Anfal Eltahir – Experienced Web Developer with over 5 years of experience in 
+		  scalable web applications. Expertise in front-end and back-end technologies including React, Node.js, PHP, Shopify, WooCommerce, WordPress, and more. 
+		  I have strong skills in responsive design, performance optimization, and delivering seamless user experiences.
         </p>
       </motion.section>
 
@@ -135,14 +161,14 @@ function App() {
         <h2 className="text-3xl font-bold mb-6 text-gray-800">Contact</h2>
         <div className="flex flex-col md:flex-row gap-6">
           <a
-            href="https://linkedin.com/in/Anfal-93"
+            href="linkedin.com/in/anfal-eltahir-0b3b21162"
             target="_blank"
             className="flex-1 text-center px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
           >
             LinkedIn
           </a>
           <a
-            href="mailto:your-email@example.com"
+            href="mailto:anfaleltahir93@gmail.com"
             className="flex-1 text-center px-6 py-3 bg-green-500 text-white rounded hover:bg-green-600 transition"
           >
             Email
