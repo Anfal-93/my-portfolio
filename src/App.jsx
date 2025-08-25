@@ -85,9 +85,12 @@ function App() {
       >
         <h2 className="text-3xl font-bold mb-4 text-gray-800">About Me</h2>
         <p className="text-gray-1000 max-w-4xl">
-          Hi, I'm Anfal Eltahir – Experienced Web Developer with over 5 years of experience in 
-		  scalable web applications. Expertise in front-end and back-end technologies including React, Node.js, PHP, Shopify, WooCommerce, WordPress, and more. 
-		  I have strong skills in responsive design, performance optimization, and delivering seamless user experiences.
+          Hi, I'm Anfal Eltahir – Experienced Full-Stack Web Developer with over 5 years of expertise in designing, developing, and maintaining 
+		  scalable web applications. Proficient in WordPress, Shopify, WooCommerce, Liquid Themes, TailwindCSS, Framer Motion, JavaScript, HTML, 
+		  CSS, jQuery, AJAX, PHP, Java, MySQL, and modern frameworks like React.js, and Node.js. Skilled in CI/CD pipelines, Agile methodologies, 
+		  and holding a Certified Agile Scrum Master (CASM) Certification. Adept at creating responsive, user-friendly websites that drive 
+		  engagement and collaborating with cross-functional teams to deliver innovative solutions. Strong experience in client communication, 
+		  technical design, and software development with a focus on performance optimization and seamless user experiences. 
         </p>
       </motion.section>
 
